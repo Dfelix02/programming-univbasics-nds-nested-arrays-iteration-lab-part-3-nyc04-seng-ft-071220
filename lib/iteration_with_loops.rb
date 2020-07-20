@@ -6,7 +6,7 @@ def join_nested_strings(src)
   src.size.times do |outer|
     
     src[outer].size.times do |iner|
-      if src[outer][iner].is_a? == String
+      if src[outer][iner].is_a?
         join_nested_string += src[outer][iner]+" "
       end
     end
